@@ -1,0 +1,22 @@
+C:\WoW_Server\SpawnCreator\SpawnCreator\bin\Debug\SpawnCreator.exe.config
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\bin\Debug\SpawnCreator.exe.config
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\bin\Debug\SpawnCreator.exe
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\bin\Debug\SpawnCreator.pdb
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_BagFamilyMasksDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_ClassMasksDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_FlagMasksDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_FlagExtraMasksDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_FlagCustomDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_ItemPreview.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_MainMenu.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_ItemCreator.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_RaceMasksDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Form_SocketOptions.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.Properties.Resources.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.SaveOptionsDialog.resources
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.csproj.GenerateResource.Cache
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.exe
+C:\Users\alex\Desktop\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.pdb
+G:\Visual Studio\SpawnCreator\SpawnCreator\bin\Debug\SpawnCreator.exe.config
+G:\Visual Studio\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.exe
+G:\Visual Studio\SpawnCreator\SpawnCreator\obj\Debug\SpawnCreator.pdb
