@@ -272,6 +272,7 @@
             this.label83 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label82 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -3740,6 +3741,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.pictureBox9);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
@@ -3752,7 +3754,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SpawnCreator.Properties.Resources.chibi_spawn_by_xxthornthevamphogxx_d9fzfhb;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 305);
+            this.pictureBox9.Location = new System.Drawing.Point(3, 280);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(161, 191);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3839,6 +3841,19 @@
             this.label82.MouseEnter += new System.EventHandler(this.panel4_MouseEnter);
             this.label82.MouseLeave += new System.EventHandler(this.panel4_MouseLeave);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(10, 475);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(151, 16);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "[Visit Creator\'s Website]";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form_ItemCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3887,6 +3902,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -4141,5 +4157,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

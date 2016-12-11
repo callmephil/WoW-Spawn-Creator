@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace SpawnCreator
         public Form_ItemCreator()
         {
             InitializeComponent();
+        }
+
+        // Fix flickering .. still showing a flicker at the top left corner, wtf? really?
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
         }
 
         // Used to get values from SocketBonus Form
@@ -1504,6 +1516,11 @@ namespace SpawnCreator
             {
                 Definers.output_itemdurability = x;
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://emucraft.com");
         }
     }
 }
