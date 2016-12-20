@@ -554,9 +554,9 @@ namespace SpawnCreator
                     break;
             }
 
-            int classMaskE = 0;
+            int classMaskE = -1;
             UInt32 flagMasksE = 0;
-            int raceMaskE = 0;
+            int raceMaskE = -1;
             int flagExtraMaskE = 0;
             int BagFamilyMasksE = 0;
             int flagCustomE = 0;
@@ -864,7 +864,7 @@ namespace SpawnCreator
             // Prepare SQL
             // select insertion columns
             string BuildSQLFile;
-            BuildSQLFile = "INSERT INTO item_template (entry, quality, class, subclass, name, description, ";
+            BuildSQLFile = "REPLACE INTO item_template (entry, quality, class, subclass, name, description, ";
             BuildSQLFile += "displayid, inventorytype, bonding, buycount, buyprice, sellprice, stackable, maxcount, ";
             BuildSQLFile += "sheath, material, itemlevel, itemset, randomproperty, randomsuffix, gemproperties, ";
             BuildSQLFile += "socketColor_1, socketContent_1, socketColor_2, socketContent_2, socketColor_3, socketContent_3, ";
@@ -895,7 +895,39 @@ namespace SpawnCreator
             BuildSQLFile += "'" + textBox2.Text + "', "; // name
             BuildSQLFile += "'" + textBox3.Text + "', "; // description
             BuildSQLFile += textBox4.Text + ", "; // displayid
-            BuildSQLFile += comboBox4.SelectedIndex + ", "; // inventorytype
+
+            // another fix for inventoryType if weapon is two handed
+            if (comboBox2.SelectedIndex == 2) // classID: weapon
+            {
+                // check if subclass is two handed x...
+                switch(comboBox3.SelectedIndex)
+                {
+                    case 1: // subclassid 1 two handed axes
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    case 5: // subclassid 5 two handed maces
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    case 6: // subclassid 6 polearm
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    case 8: // subclassid 7 two handed swords
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    case 10: // subclassid 10 staff
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    case 17: // subclassid 17 spear
+                        BuildSQLFile += 17 + ", "; // inventorytype two handed
+                        break;
+                    default:
+                        BuildSQLFile += comboBox4.SelectedIndex + ", "; // inventorytype
+                        break;
+                }
+            }
+            else
+                BuildSQLFile += comboBox4.SelectedIndex + ", "; // inventorytype
+
             BuildSQLFile += comboBox5.SelectedIndex + ", "; // bonding
             BuildSQLFile += textBox5.Text + ", "; // buycount
             BuildSQLFile += textBox6.Text + ", "; // buyprice
@@ -1134,8 +1166,17 @@ namespace SpawnCreator
             BuildSQLFile += textBox25.Text + ", "; // stat_value10
             BuildSQLFile += textBox26.Text + ", "; // scalingStatDistribution
             BuildSQLFile += textBox27.Text + ", "; // scalingStatValue
-            BuildSQLFile += classMaskE + ", "; // allowableClass
-            BuildSQLFile += raceMaskE + ", "; // allowableRace
+
+            if (classMaskE == 0) // fix 
+                BuildSQLFile += "-1" + ", "; // allowableClass
+            else
+                BuildSQLFile += classMaskE + ", "; // allowableClass
+
+            if (raceMaskE == 0) // fix 
+                BuildSQLFile += "-1" + ", "; // allowableRace
+            else
+                BuildSQLFile += raceMaskE + ", "; // allowableRace
+
             BuildSQLFile += flagMasksE + ", "; // flags
             BuildSQLFile += flagExtraMaskE + ", "; // flagsExtra
             BuildSQLFile += BagFamilyMasksE + ", "; // bagFamily

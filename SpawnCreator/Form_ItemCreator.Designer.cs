@@ -265,6 +265,7 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label84 = new System.Windows.Forms.Label();
@@ -272,7 +273,6 @@
             this.label83 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label82 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -2292,6 +2292,8 @@
             this.groupBox7.Controls.Add(this.label43);
             this.groupBox7.Controls.Add(this.textBox39);
             this.groupBox7.Controls.Add(this.label42);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.textBox50);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(378, 264);
             this.groupBox7.Name = "groupBox7";
@@ -2305,7 +2307,7 @@
             this.pictureBox4.Image = global::SpawnCreator.Properties.Resources.beta_axe;
             this.pictureBox4.Location = new System.Drawing.Point(110, 22);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(105, 74);
+            this.pictureBox4.Size = new System.Drawing.Size(105, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 77;
             this.pictureBox4.TabStop = false;
@@ -2709,7 +2711,6 @@
             this.groupBox9.Controls.Add(this.textBox56);
             this.groupBox9.Controls.Add(this.label61);
             this.groupBox9.Controls.Add(this.textBox55);
-            this.groupBox9.Controls.Add(this.textBox50);
             this.groupBox9.Controls.Add(this.label60);
             this.groupBox9.Controls.Add(this.textBox54);
             this.groupBox9.Controls.Add(this.label59);
@@ -2719,7 +2720,6 @@
             this.groupBox9.Controls.Add(this.label57);
             this.groupBox9.Controls.Add(this.textBox51);
             this.groupBox9.Controls.Add(this.label56);
-            this.groupBox9.Controls.Add(this.label55);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(378, 623);
             this.groupBox9.Name = "groupBox9";
@@ -3025,7 +3025,7 @@
             // textBox50
             // 
             this.textBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox50.Location = new System.Drawing.Point(6, 36);
+            this.textBox50.Location = new System.Drawing.Point(114, 88);
             this.textBox50.Name = "textBox50";
             this.textBox50.Size = new System.Drawing.Size(98, 20);
             this.textBox50.TabIndex = 67;
@@ -3113,7 +3113,7 @@
             // textBox51
             // 
             this.textBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox51.Location = new System.Drawing.Point(114, 36);
+            this.textBox51.Location = new System.Drawing.Point(6, 36);
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(98, 20);
             this.textBox51.TabIndex = 80;
@@ -3125,7 +3125,7 @@
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(111, 19);
+            this.label56.Location = new System.Drawing.Point(3, 19);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(47, 13);
             this.label56.TabIndex = 79;
@@ -3137,7 +3137,7 @@
             this.label55.AutoSize = true;
             this.label55.BackColor = System.Drawing.Color.Transparent;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(6, 19);
+            this.label55.Location = new System.Drawing.Point(147, 71);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(34, 13);
             this.label55.TabIndex = 78;
@@ -3751,6 +3751,19 @@
             this.panel3.Size = new System.Drawing.Size(167, 499);
             this.panel3.TabIndex = 78;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(10, 475);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(151, 16);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "[Visit Creator\'s Website]";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SpawnCreator.Properties.Resources.chibi_spawn_by_xxthornthevamphogxx_d9fzfhb;
@@ -3840,19 +3853,6 @@
             this.label82.Click += new System.EventHandler(this.panel4_Click);
             this.label82.MouseEnter += new System.EventHandler(this.panel4_MouseEnter);
             this.label82.MouseLeave += new System.EventHandler(this.panel4_MouseLeave);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(10, 475);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(151, 16);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "[Visit Creator\'s Website]";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form_ItemCreator
             // 
