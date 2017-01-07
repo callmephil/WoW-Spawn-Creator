@@ -567,7 +567,11 @@ namespace SpawnCreator
                 int idx;
                 if ((int.TryParse(checkedIndicies1[i1], out idx)))
                 {
-                    switch(idx)
+                    // fix issue with class mask
+                    if (idx >= 0)
+                        classMaskE = 0;
+
+                    switch (idx)
                     {
                         case 0: // warrior
                             classMaskE += 1;
@@ -1181,8 +1185,8 @@ namespace SpawnCreator
             BuildSQLFile += flagExtraMaskE + ", "; // flagsExtra
             BuildSQLFile += BagFamilyMasksE + ", "; // bagFamily
             BuildSQLFile += flagCustomE + ", "; // flagCustom
-            BuildSQLFile += textBox28.Text + ", "; // armor
-            BuildSQLFile += textBox29.Text + ", "; // block
+            BuildSQLFile += textBox29.Text + ", "; // armor
+            BuildSQLFile += textBox28.Text + ", "; // block
             BuildSQLFile += textBox30.Text + ", "; // armorDamageModifier
             BuildSQLFile += textBox31.Text + ", "; // maxDurability
             BuildSQLFile += textBox32.Text + ", "; // holy_res

@@ -70,3 +70,22 @@ C:\Users\alex\Desktop\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Fo
 C:\Users\alex\Desktop\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Properties.Resources.resources
 C:\Users\alex\Desktop\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.SaveOptionsDialog.resources
 C:\Users\alex\Desktop\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.csproj.GenerateResource.Cache
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\bin\Release\SpawnCreator.exe.config
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.exe
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.pdb
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\bin\Release\SpawnCreator.exe
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\bin\Release\SpawnCreator.pdb
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.csprojResolveAssemblyReference.cache
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_BagFamilyMasksDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_ClassMasksDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_FlagMasksDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_FlagExtraMasksDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_FlagCustomDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_ItemPreview.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_MainMenu.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_ItemCreator.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_RaceMasksDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Form_SocketOptions.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.Properties.Resources.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.SaveOptionsDialog.resources
+F:\Visual Studio\WoW-Spawn-Creator\SpawnCreator\obj\Release\SpawnCreator.csproj.GenerateResource.Cache
